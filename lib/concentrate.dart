@@ -50,20 +50,6 @@ class ConcentrateAppState extends State<ConcentrateApp> {
   int testnr = 0;
   String ConcEar = "Focus on Right";
   TimelineWidget? timeline;
-  Widget appBar(context) {
-    return AppBar(
-      title: const Text("Listen", style: TextStyle(color: Colors.black)),
-      centerTitle: true,
-      shadowColor: Colors.white,
-      backgroundColor: Colors.white,
-      actions: [
-        TextButton(
-            onPressed: () {
-              //testFinished();
-            },
-            child: const Text("Results"))
-      ],);
-  }
   @override
   void initState(){
     // TODO: implement initState
@@ -401,7 +387,7 @@ class TimelineWidgetState extends State<TimelineWidget>
           LinearProgressIndicator(
             value: controller.value,
             minHeight: 14,
-            color: Color.fromARGB(255, 241, 153, 182),
+            color: Colors.black54,
             backgroundColor: Color.fromARGB(255, 174, 173, 174),
             semanticsLabel: 'Linear progress indicator',
           ),
